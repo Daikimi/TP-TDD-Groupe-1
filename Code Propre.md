@@ -17,3 +17,10 @@
 - utiliser des Exceptions et pas de valeurs spéciales
 - pas de variable globale
 - Ne pas conserver les valeurs de retour que vous n'utilisez pas
+
+##Exemple :
+- noms:
+ Mauvais code:  Customer[] customerList;
+                Table theTable;
+Code Propre : Customer[] customers;
+              Table customers;
