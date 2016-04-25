@@ -25,7 +25,7 @@
  Customer[] customerList;
  Table theTable;
  ```
--Code Propre :
+- Code Propre :
 ```Java
  Customer[] customers;
  Table customers;
