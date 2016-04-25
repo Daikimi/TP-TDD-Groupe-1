@@ -21,8 +21,12 @@
 ##Exemple :
 - noms:
 - Mauvais code:
+```Java
  Customer[] customerList;
  Table theTable;
+ ```
 -Code Propre :
+```Java
  Customer[] customers;
  Table customers;
+ ```
