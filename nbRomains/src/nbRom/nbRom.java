@@ -17,8 +17,7 @@ public class nbRom {
 			nbPresent = nbACalculer / diviseur;
 			for (int x =0; x < nbPresent; x++) {
 				if(nbPresent == 4) {
-					nbString += traduction(diviseur);
-					nbString += traduction(5*diviseur);
+					nbString = nbString + traduction(diviseur) + traduction(5*diviseur);
 					nbACalculer -= diviseur*4;
 					nbPresent = 1;
 				} else {

@@ -12,8 +12,10 @@ public class nbRomTest {
 		assertEquals("MI",nbRom.change(1001));
 		assertEquals("MIII",nbRom.change(1003));
 		assertEquals("DXXI",nbRom.change(521));
+		assertEquals("CDXLIV",nbRom.change(444));
 		assertEquals("MCCXLIII",nbRom.change(1243));
 		assertEquals("MCCXLIV",nbRom.change(1244));
+
 	}
 
 }
