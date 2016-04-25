@@ -3,23 +3,48 @@ package nbRom;
 public class nbRom {
 
 	public static String change(int i) {
-		int nbACalculer, diviseur, nbPresent, fois;
+		int nbACalculer, diviseur, nbPresent, fois, occurC, occurX, occurI;
+		String nbString, nbStringFinal;
 		nbACalculer = i;
-		String nbString = "";
+		nbString = "";
 		diviseur = 1000;
 		nbPresent = 0;
 		fois = 0;
 		
 		while (nbACalculer != 0) {
 			
-			nbPresent = nbACalculer%diviseur;
+			nbPresent = nbACalculer / diviseur;
 			for (int x =0; x < nbPresent; x++) {
 				nbString += traduction(diviseur);
 				nbACalculer = nbACalculer - diviseur;
 			}
+			if (fois%2 == 0) {
+				diviseur /= 2;
+				fois++;
+			} else {
+				diviseur /= 5;
+				fois++;
+			}
 		}
+	
+		/*if (nbString.length() >= 4) {
+	
+			for (int z = 0; z < nbString.length()-3; z++) {
+				String temp=nbString.substring(z,z+3);
+				if (temp.matches("CCCC")) {
+					
+				}
+				if (temp.matches("XXXX")) {
+					
+				}
+				if (temp.matches("IIII")) {
+					
+				}
+			}
+		}*/
+				
 		
-		return nbString;
+		return nbStringFinal;
 	}
 	public static String traduction(int i) {
 		if (i == 1000) {
