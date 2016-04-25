@@ -21,18 +21,18 @@
 ##Exemple :
 - noms:
 Mauvais code:
-```Java
+```C
  Customer[] customerList;
  Table theTable;
  ```
 Code Propre :
-```Java
+```C
  Customer[] customers;
  Table customers;
  ```
  -notation:
 Mauvais code:
-```Java
+```C
 const int maxcount = 1
 bool change = true
 public interface Repository
@@ -41,7 +41,7 @@ public class personaddress
 void getallorders()
 ```
 Code Propre:
-```Java
+```C
 const int MAXCOUNT = 1
 bool isChanged = true
 public interface IRepository
