@@ -20,7 +20,9 @@
 
 ##Exemple :
 - noms:
- Mauvais code:  Customer[] customerList;
-                Table theTable;
-Code Propre : Customer[] customers;
-              Table customers;
+ Mauvais code:
+ Customer[] customerList;
+ Table theTable;
+Code Propre :
+ Customer[] customers;
+ Table customers;
