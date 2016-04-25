@@ -20,9 +20,9 @@
 
 ##Exemple :
 - noms:
- Mauvais code:
+- Mauvais code:
  Customer[] customerList;
  Table theTable;
-Code Propre :
+-Code Propre :
  Customer[] customers;
  Table customers;
