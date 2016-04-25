@@ -20,13 +20,32 @@
 
 ##Exemple :
 - noms:
-- Mauvais code:
+Mauvais code:
 ```Java
  Customer[] customerList;
  Table theTable;
  ```
-- Code Propre :
+Code Propre :
 ```Java
  Customer[] customers;
  Table customers;
  ```
+ -notation:
+Mauvais code:
+```Java
+const int maxcount = 1
+bool change = true
+public interface Repository
+private string NAME
+public class personaddress
+void getallorders()
+```
+Code Propre:
+```Java
+const int MAXCOUNT = 1
+bool isChanged = true
+public interface IRepository
+private string _name
+public class PersonAddress
+void GetAllOrders()
+```
