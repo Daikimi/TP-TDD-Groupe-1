@@ -7,12 +7,13 @@ import org.junit.Test;
 public class nbRomTest {
 	@Test
 	public void Test() {
-		assertEquals(nbRom.change(1),"I");
-		assertEquals(nbRom.change(1000),"M");
-		assertEquals(nbRom.change(1001),"MI");
-		assertEquals(nbRom.change(1003),"MIII");
-		assertEquals(nbRom.change(521),"DXXI");
-		assertEquals(nbRom.change(1244),"MCCXLIV");
+		assertEquals("I",nbRom.change(1));
+		assertEquals("M",nbRom.change(1000));
+		assertEquals("MI",nbRom.change(1001));
+		assertEquals("MIII",nbRom.change(1003));
+		assertEquals("DXXI",nbRom.change(521));
+		assertEquals("MCCXLIII",nbRom.change(1243));
+		assertEquals("MCCXLIV",nbRom.change(1244));
 	}
 
 }

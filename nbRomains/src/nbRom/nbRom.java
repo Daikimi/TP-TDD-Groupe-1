@@ -3,21 +3,30 @@ package nbRom;
 public class nbRom {
 
 	public static String change(int i) {
-		int nbACalculer, diviseur, nbPresent, fois, occurC, occurX, occurI;
-		String nbString, nbStringFinal;
+		int nbACalculer, diviseur, nbPresent, fois;
+		String nbString;
+		
 		nbACalculer = i;
 		nbString = "";
 		diviseur = 1000;
 		nbPresent = 0;
 		fois = 0;
 		
-		while (nbACalculer != 0) {
+		while (nbACalculer != 0 || diviseur != 1) {
 			
 			nbPresent = nbACalculer / diviseur;
 			for (int x =0; x < nbPresent; x++) {
+				if(nbPresent == 4) {
+					nbString += traduction(diviseur);
+					nbString += traduction(5*diviseur);
+					nbACalculer -= diviseur*4;
+					nbPresent = 1;
+				} else {
 				nbString += traduction(diviseur);
-				nbACalculer = nbACalculer - diviseur;
+				nbACalculer -= diviseur;
+				}
 			}
+	
 			if (fois%2 == 0) {
 				diviseur /= 2;
 				fois++;
@@ -25,26 +34,11 @@ public class nbRom {
 				diviseur /= 5;
 				fois++;
 			}
-		}
-	
-		/*if (nbString.length() >= 4) {
-	
-			for (int z = 0; z < nbString.length()-3; z++) {
-				String temp=nbString.substring(z,z+3);
-				if (temp.matches("CCCC")) {
-					
-				}
-				if (temp.matches("XXXX")) {
-					
-				}
-				if (temp.matches("IIII")) {
-					
-				}
+			if (diviseur == 0) {
+				return nbString;
 			}
-		}*/
-				
-		
-		return nbStringFinal;
+		}
+		return nbString;
 	}
 	public static String traduction(int i) {
 		if (i == 1000) {
